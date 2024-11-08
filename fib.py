@@ -5,9 +5,11 @@ El número cero en la secuencia de Fibonacci es 0. El primer número es 1
 Los números negativos no son aceptados
 """
 
+
 def fibonacci(position):
-  if(position < 0):
-    raise ValueError("Invalid input")
-  if(position == 0 or position == 1):
-    return position
-  return fibonacci(position - 1) + fibonacci(position - 2)
+    if position < 0:
+        raise ValueError("Invalid input")
+    if position == 0 or position == 1:
+        return position
+    return fibonacci(position - 1) + fibonacci(position - 2)
+
